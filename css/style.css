@@ -183,3 +183,38 @@ section {
 .contact-section .form-control::placeholder {
     color: rgba(255, 255, 255, 0.529);
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h5 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 200;
+}
+
+.footer-logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.social-links i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
