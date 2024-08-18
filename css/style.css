@@ -144,3 +144,42 @@ section {
     width: 90%;
     border-radius: 10px;
 }
+
+.overlay-contact {
+    /* opacity: 0.9; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(99, 208, 245, 0.442), rgba(0, 94, 126, 0.971));
+    z-index: -1;
+}
+
+.contact-section {
+    background-image: url(/img/cover_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-section .form-control {
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.73);
+}
+
+
+.contact-section .form-control:focus {
+    border-color: #fff;
+
+}
+
+.contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.529);
+}
