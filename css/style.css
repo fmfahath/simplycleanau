@@ -14,6 +14,7 @@ a {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 section {
@@ -55,7 +56,7 @@ section {
 }
 
 .hero-section {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +73,7 @@ section {
     bottom: 0;
     right: 0;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(145, 225, 252, 0.642), rgba(3, 92, 122, 0.971));
+    background: linear-gradient(to bottom, rgba(99, 208, 245, 0.342), rgba(0, 94, 126, 0.971));
     z-index: -1;
 }
 
@@ -83,6 +84,9 @@ section {
     border: none;
     border-radius: 100px;
     padding: 14px 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     background: linear-gradient(to left, rgba(16, 184, 235, 0.938), rgb(6, 96, 193));
     transition: all 0.2s ease;
@@ -93,13 +97,36 @@ section {
     transform: translateY(-4px);
 }
 
-.hero-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .hero-btn i {
     /* font-size: 20px; */
     margin-right: 5px;
+}
+
+.services-section .card {
+    height: 580px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.services-section .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-10px);
+}
+
+.services-section .card-img {
+    height: 250px;
+    padding: 10px;
+}
+
+.services-section .card-img img {
+    border-radius: 10px;
+}
+
+.services-section .service-btn {
+    margin-bottom: 20px;
 }
