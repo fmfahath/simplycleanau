@@ -130,3 +130,17 @@ section {
 .services-section .service-btn {
     margin-bottom: 20px;
 }
+
+.aboutUs-section {}
+
+.aboutUs-section .aboutUs-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs-section .aboutUs-img img {
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+}
