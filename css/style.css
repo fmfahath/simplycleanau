@@ -7,6 +7,12 @@
     font-family: 'Roboto', "sans-serif";
 }
 
+html,
+body {
+    scroll-behavior: smooth !important;
+    /* overflow-x: hidden; */
+}
+
 ::-webkit-scrollbar {
     width: 13px;
 }
@@ -263,4 +269,75 @@ section {
 
 #to-top.show {
     transform: scale(1);
+}
+
+#counters {
+    background-image: url(/img/cover_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay-counters {
+    /* opacity: 0.9; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(to left, rgba(111, 198, 255, 0.285), rgba(195, 224, 238, 0.871));
+    z-index: -1;
+}
+
+.counter {
+    color: #fff;
+    text-align: center;
+}
+
+.counter h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgba(16, 184, 235, 0.638), rgb(4, 106, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter h3 {
+    color: rgb(6, 56, 109);
+    font-size: 23px;
+}
+
+.review {
+    background: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.review:hover {
+    color: #fff;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-20px);
+    background: linear-gradient(to bottom, rgba(99, 208, 245, 0.442), rgba(0, 94, 126, 0.771));
+    margin-top: 10px;
+}
+
+
+.review-person {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+    padding-bottom: 10px;
+}
+
+.review-person .person-img {
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+}
+
+.review .review-stars {
+    color: orange;
 }
