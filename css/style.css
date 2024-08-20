@@ -7,30 +7,7 @@
     font-family: 'Roboto', "sans-serif";
 }
 
-html,
-body {
-    scroll-behavior: smooth !important;
-    /* overflow-x: hidden; */
-}
 
-::-webkit-scrollbar {
-    width: 13px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: rgba(12, 12, 12, 0.658);
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, rgba(17, 179, 228, 0.738), rgba(16, 121, 233, 0.786));
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, rgb(17, 179, 228), rgba(16, 121, 233, 0.921));
-}
 
 a {
     text-decoration: none;

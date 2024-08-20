@@ -9,39 +9,70 @@ document.addEventListener('scroll', () => {
     }
 })
 
-// counter up-------------------------------------------- 
-const counters = document.querySelectorAll(".counters span");
-const container = document.querySelector(".counters");
+// counter up--------------------------------------------
+// const counters = document.querySelectorAll(".counters span");
+// const container = document.querySelector(".container");
 
+// let activated = false
+
+// window.onscroll = () => {
+//     if (!activated) {
+//         if (window.scrollY >= container.offsetTop) {
+//             counters.forEach(counter => {
+//                 let start = 0;
+//                 let end = counter.dataset.count
+//                 // console.log(end)
+
+//                 let count = setInterval(() => {
+//                     start++;
+//                     counter.textContent = start;
+//                     if (start == end) {
+//                         clearInterval(count);
+//                     }
+//                 }, 2000 / end)
+//             })
+//         }
+//         activated = true;
+//     }
+// }
+
+// -----------------------------------------------------------------------------
 let activated = false
+const counters = document.querySelectorAll(".counters span");
+const container = document.querySelector(".container");
 
-window.addEventListener('scroll', () => {
-    if (pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false) {
+document.addEventListener("scroll", () => {
+
+    console.log('counter triggered')
+    console.log('state: ', activated)
+    console.log('counter scroll:', window.scrollY)
+
+    if (!activated && window.scrollY > 200) {
+        console.log("conter in");
+
         counters.forEach(counter => {
-            counter.innerText = 0;
+            let start = 0;
+            let end = counter.dataset.count
+            // console.log(end)
 
-            let count = 0;
-
-            function updateCount() {
-                const target = parseInt(counter.dataset.count);
-
-                if (count < target) {
-                    count++;
-                    count.innerText = count;
-                    setTimeout(updateCount, 10)
-                } else {
-                    counter.innerText = target;
+            let count = setInterval(() => {
+                start++;
+                counter.textContent = start;
+                if (start == end) {
+                    clearInterval(count);
                 }
-            }
-
-            updateCount();
-            activated = true;
-        });
-    } else if (pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true) {
-        counters.forEach(counter => {
-            counter.innerText = 0;
-        });
-
-        activated = false;
+            }, 2000 / end)
+        })
+        activated = true;
     }
 })
+
+// -------------------------------------------------------------------------
+
+// const innerWidth = window.innerWidth;
+// const docElmWidth = document.documentElement.clientWidth;
+// const docbdyWidth = document.body.clientWidth;
+
+// console.log(innerWidth, docElmWidth, docbdyWidth)
+
+// alert('Current scroll from the top: ' + window.scrollY);
