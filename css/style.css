@@ -148,14 +148,13 @@ section {
 }
 
 .overlay-contact {
-    /* opacity: 0.9; */
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    background: linear-gradient(to right, rgba(99, 208, 245, 0.442), rgba(0, 94, 126, 0.971));
+    background: linear-gradient(to right, rgba(99, 208, 245, 0.542), rgba(0, 94, 126, 0.971));
     z-index: -1;
 }
 
@@ -335,15 +334,21 @@ section {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-/* ----------------------- */
-/* .rw {
-    background-color: antiquewhite;
+.contact-btns {
+    /* display: inline-block; */
+    width: 160px;
+
 }
 
-.cnt {
-    background-color: rgb(255, 173, 65);
+
+.cbtn {
+    background-color: aqua;
 }
 
-.mp {
-    background-color: rgb(119, 255, 92);
-} */
+.dbtn {
+    background-color: rgb(60, 232, 66);
+}
+
+.wbtn {
+    background-color: rgb(245, 157, 56);
+}
