@@ -28,14 +28,15 @@ section {
 .navbar {
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 10;
+    transition: all 0.5s ease-out !important;
 }
 
-.navbar-show {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    background-color: black;
+.navbar-hide {
+    /* background-color: orange !important; */
+    transform: translateY(-150px) !important;
 }
+
 
 .navbar-brand {
     color: rgb(16, 133, 223);
@@ -217,6 +218,10 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.contact-section .container {
+    margin-top: 5%;
 }
 
 .contact-section .form-control {
@@ -438,6 +443,10 @@ section {
     .counter h3 {
         font-size: 20px;
     }
+
+    .contact-section .container {
+        margin-top: 20%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -447,6 +456,10 @@ section {
 
     .hero-text p {
         font-size: 18px;
+    }
+
+    .contact-section .container {
+        margin-top: 20%;
     }
 }
 
@@ -475,14 +488,32 @@ section {
     .counter h3 {
         font-size: 18px;
     }
+
+    .contact-section .container {
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 1200px) and (min-width:992px) {
+    .hero-section {
+        min-height: 50vh;
+    }
+
     .hero-text h1 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .hero-text p {
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    .contact-section .container {
+        margin-top: 15%;
+    }
+}
+
+@media (min-width:1200px) {
+    .hero-section {
+        min-height: 80vh;
     }
 }
