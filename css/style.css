@@ -407,6 +407,10 @@ section {
 }
 
 @media (max-width: 576px) {
+    .hero-section {
+        padding-top: 110px;
+    }
+
     .hero-mobile-text {
         display: block;
     }
