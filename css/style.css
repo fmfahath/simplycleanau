@@ -431,6 +431,7 @@ section {
 @media (max-width: 576px) {
     .hero-section {
         padding-top: 110px;
+        background-size: 130% 100%;
     }
 
     .hero-mobile-text {
@@ -463,6 +464,10 @@ section {
 
     .contact-section .container {
         margin-top: 20%;
+    }
+
+    .contact-section {
+        background-size: 110% 100%;
     }
 
     .aboutUs-text p {
