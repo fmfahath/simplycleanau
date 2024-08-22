@@ -7,7 +7,30 @@
     font-family: 'Roboto', "sans-serif";
 }
 
+html,
+body {
+    scroll-behavior: smooth !important;
+    /* overflow-x: hidden; */
+}
 
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(12, 12, 12, 0.658);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgba(17, 179, 228, 0.738), rgba(16, 121, 233, 0.786));
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgb(17, 179, 228), rgba(16, 121, 233, 0.921));
+}
 
 a {
     text-decoration: none;
@@ -71,7 +94,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/img/cover_2.jpg);
+    background-image: url(../img/cover_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -214,7 +237,7 @@ section {
 
 .contact-section {
     min-height: 90vh;
-    background-image: url(/img/cover_3.jpg);
+    background-image: url(../img/cover_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -225,13 +248,13 @@ section {
 }
 
 .contact-section .form-control {
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.052);
     border-radius: 0;
     padding: 10px 15px;
     color: #fff;
     outline: none;
     box-shadow: none;
-    border-color: rgba(255, 255, 255, 0.73);
+    border-color: rgba(255, 255, 255, 0.53);
 }
 
 
@@ -307,7 +330,7 @@ section {
 }
 
 #counters {
-    background-image: url(/img/cover_4.jpg);
+    background-image: url(../img/cover_4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -347,14 +370,14 @@ section {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     transition: all 0.2s ease;
     border-radius: 10px;
-    transition: 0.3s all ease-in-out;
+    transition: all 0.3s ease-in-out !important;
     cursor: pointer;
 }
 
 .review:hover {
     color: #fff;
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.25);
-    transform: translateY(-20px);
+    transform: translateY(-20px) !important;
     background: linear-gradient(to bottom, rgba(99, 208, 245, 0.442), rgba(0, 94, 126, 0.771));
     margin-top: 10px;
 }
@@ -399,18 +422,6 @@ section {
 }
 
 
-.cbtn {
-    background-color: aqua;
-}
-
-.dbtn {
-    background-color: rgb(60, 232, 66);
-}
-
-.wbtn {
-    background-color: rgb(245, 157, 56);
-}
-
 @media (max-width: 576px) {
     .hero-section {
         padding-top: 110px;
@@ -425,7 +436,7 @@ section {
     }
 
     .hero-text h1 {
-        font-size: 45px;
+        font-size: 43px;
         font-weight: 400;
         color: #fff;
     }
@@ -446,6 +457,18 @@ section {
 
     .contact-section .container {
         margin-top: 20%;
+    }
+
+    .aboutUs-text p {
+        font-size: 18px;
+    }
+
+    .section-intro p {
+        font-size: 18px;
+    }
+
+    .review-text p {
+        font-size: 16px;
     }
 }
 
